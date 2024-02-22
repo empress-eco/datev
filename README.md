@@ -1,12 +1,14 @@
+<div align="center">
 <p align="center">
  <img src="https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png" alt="Logo" width="80" height="80">
+
+ Automate your accounting process with seamless Empress and DATEV integration.
+
+[Explore the Docs](https://grow.empress.eco/) | [Report Bug](https://github.com/empress-eco/datev/issues) | [Request Feature](https://github.com/empress-eco/datev/issues)
 </p>
 
-Automate your accounting process with seamless Empress and DATEV integration.
+</div>
 
-- [Explore the Docs](https://grow.empress.eco/)
-- [Report Bug](https://github.com/empress-eco/datev/issues)
-- [Request Feature](https://github.com/empress-eco/datev/issues)
 
 ## About The Project
 
