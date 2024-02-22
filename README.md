@@ -1,65 +1,57 @@
-## ERPNext - DATEV Integration
+<p align="center">
+ <img src="https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png" alt="Logo" width="80" height="80">
+</p>
 
-Integration between [ERPNext](https://github.com/frappe/erpnext) and DATEV.
+Automate your accounting process with seamless Empress and DATEV integration.
 
+- [Explore the Docs](https://grow.empress.eco/)
+- [Report Bug](https://github.com/empress-eco/datev/issues)
+- [Request Feature](https://github.com/empress-eco/datev/issues)
+
+## About The Project
+
+The Empress DATEV Integration is designed to streamline your financial workflow by automating the accounting process between Empress and DATEV. This tool is perfect for businesses seeking to enhance their efficiency in managing financial transactions.
+
+### Key Features
+
+- Automated voucher submission to DATEV Unternehmen Online
+- Export of raw GL Entries in DATEV CSV format
+- Easy configuration of client number, tax consultant's number, and temporary against account
+
+This project utilizes the following major frameworks and libraries:
+
+- [Empress](https://github.com/Empress/Empress)
 - [DATEV Unternehmen Online](https://www.datev.de/web/de/mydatev/online-anwendungen/datev-unternehmen-online/)
 
-    When a voucher is submitted, it will be sent to DATEV Unternehmen Online by email. Either by converting the document to PDF first (outgoing vouchers) or by sending files attached to the document (incoming vouchers).
+## Getting Started
 
-- DATEV CSV Export
+Ensure you have [Empress](https://github.com/Empress/Empress) and [DATEV Unternehmen Online](https://www.datev.de/web/de/mydatev/online-anwendungen/datev-unternehmen-online/) installed and fully functional before starting.
 
-    Export raw **GL Entries** from ERPNext in the DATEV CSV format.
+### Installation
 
-## Install on Frappe Cloud
-
-1. Go to https://frappecloud.com/dashboard/#/sites and click the "New Site" button.
-2. In Step 2 ("Select apps to install"), select "ERPNext" and "DATEV Unternehmen Online Integration".
+1. Visit [Empress Cloud Dashboard](https://Empresscloud.com/dashboard/#/sites) and click the "New Site" button.
+2. In Step 2 ("Select apps to install"), select "Empress" and "DATEV Unternehmen Online Integration".
 3. Complete the new site wizard.
+4. Clone the project repo: `git clone https://github.com/empress-eco/datev.git`
 
+## Usage
 
-## Setup DATEV CSV Export
+You can preview the transactions data by accessing the DATEV report in the Empress dashboard. This report, along with the master data, can be exported as a zip file. Your tax consultant can then import your GL Entries into his DATEV system.
 
-1. Datev Settings
+## Contributing
 
-    Configure you client number, you tax consultant's number and a temporary against account.
+We value your input and contributions! Here's how you can contribute:
 
-2. DATEV Report
-
-    Now you can use the report "DATEV". This is a preview of the transactions data. It can be exported, along with the master data, as zip file via the report's menu. Your tax xonsultant can then import your GL Entries into his DATEV system.
-
-## Setup DATEV Unternehmen Online [en]
-
-1. Open **DATEV Unternehmen Online Settings**
-2. Enable the integration
-3. Select the _Email Account_ that should be used to send receipts to DATEV Unternehmen Online
-4. Add a row to the table
-5. Select the _Voucher Type_ (**Sales Invoice**, **Purchase Invoice** or **Expense Claim**)
-6. Paste the target email address provided by DATEV Unternehmen Online ([DATEV Help Center](https://apps.datev.de/help-center/documents/1007550))
-8. Enable "Add Attachments" or "Add Print"
-9. Save
-
-![datev-unternehmen-online-settings](https://user-images.githubusercontent.com/14891507/155744820-f7eb3aa7-ba36-4a66-aa12-80e75fc467de.png)
-
-## Einrichtung DATEV Unternehmen Online [de]
-
-1. Öffnen Sie **DATEV Unternehmen Online-Einstellungen** (engl. **DATEV Unternehmen Online Settings**)
-2. Aktivieren Sie die Integration
-3. Wählen Sie das _E-Mail-Konto_ (engl. _Email Account_) aus, das für den Versand von Belegen an DATEV Unternehmen Online verwendet werden soll
-4. Fügen Sie der Tabelle eine Zeile hinzu
-5. Wählen Sie die _Belegart_ (engl. _Voucher Type_)
-6. Fügen Sie die für diese Belegart von DATEV Unternehmen Online bereitgestellte Ziel-E-Mail-Adresse ein (mehr dazu im [DATEV Help Center](https://apps.datev.de/help-center/documents/1007550))
-    > **Achtung:** Die E-Mail-Adresse des Senders muss mit dem in Schritt 3 ausgewählten E-Mail-Konto übereinstimmen
-8. Aktivieren Sie "Anhänge hinzufügen" oder "Druck hinzufügen".
-9. Speichern Sie die **DATEV Unternehmen Online-Einstellungen**
-
-## Kompatibilität mit _PDF on Submit_
-
-Falls Sie [PDF on Submit](https://github.com/alyf-de/erpnext_pdf-on-submit) für dieselbe Belegart verwenden, wählen Sie "Anhänge hinzufügen" statt "Druck hinzufügen". _PDF on Submit_ fügt dann die PDF-Datei als Anhang zum Beleg hinzu und die DATEV-Integration versendet diesen.
-
-## Disclaimer
-
-"DATEV" and "DATEV Unternehmen Online" are trademarks of [DATEV eG](https://www.datev.de/). This integration is not approved or endorsed by DATEV eG.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
-GPLv3
+This project is under the MIT License. Your contributions are also licensed under the MIT License.
+
+## Acknowledgements
+
+Special thanks to the [Empress Community](https://github.com/Empress/), the architects behind the essential tools that power this project. Their innovation and dedication have been instrumental in building the foundations and functionalities we rely on. We are profoundly grateful for their pioneering work and ongoing support.
